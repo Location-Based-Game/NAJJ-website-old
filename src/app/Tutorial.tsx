@@ -7,7 +7,7 @@ export default function Tutorial() {
         STEER YOUR SHIP
       </h2>
       <p className="text-gray-300 text-center md:w-[24rem] mx-auto mt-4">
-        Use your device's gyroscope to dodge obstacles, shoot down enemies, and navigate through the endless, unforgiving facility!
+        Use your device&apos;s gyroscope to dodge obstacles, shoot down enemies, and navigate through the endless, unforgiving space facility!
       </p>
       <div className="flex flex-col xl:flex-row xl:justify-center xl:gap-16 2xl:gap-[12rem] items-center">
         <Image
