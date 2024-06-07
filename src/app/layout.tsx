@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 const ethnocentric = localFont({
   src: [{ path: "../fonts/ethnocentric rg.otf", weight: "400" }],
-  variable: "--font-ethnocentric"
+  variable: "--font-ethnocentric",
 });
 
 export default function RootLayout({
@@ -21,8 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${ethnocentric.variable}`}>
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${ethnocentric.variable} dark scroll-smooth`}>
+      <body className={`${inter.className} text-white`}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

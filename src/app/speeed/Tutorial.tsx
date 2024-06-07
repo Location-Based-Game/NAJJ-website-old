@@ -16,6 +16,7 @@ export default function Tutorial() {
           height={400}
           alt="SPEEED Tutorial"
           className="my-[-4rem]"
+          unoptimized
         />
         <Image
           src={"/images/Tutorial2.webp"}
@@ -23,6 +24,7 @@ export default function Tutorial() {
           height={400}
           alt="SPEEED Tutorial"
           className="my-[-1rem]"
+          unoptimized
         />
       </div>
     </section>

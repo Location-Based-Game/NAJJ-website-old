@@ -8,15 +8,15 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="lg:hidden fixed z-20 pl-14 pt-10">
+      <div className="fixed z-20 pl-14 pt-10">
         <div className="bg-black rounded-full size-16 flex bg-opacity-70 backdrop-blur-lg justify-center items-center">
           <Hamburger color="#646774" toggle={setSidebarOpen} toggled={sidebarOpen} />
         </div>
       </div>
-      <nav className="fixed lg:sticky z-10 overflow-hidden top-0 h-screen min-w-[16rem]">
+      <nav className="fixed z-10 overflow-hidden top-0 h-screen min-w-[16rem]">
         <ul
-          className={`py-[8rem] lg:py-16 transition-transform h-full bg-black bg-opacity-80 backdrop-blur-lg ${
-            sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+          className={`py-[8rem] transition-transform h-full bg-black bg-opacity-80 backdrop-blur-lg ${
+            sidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <ListItem href="#play">
