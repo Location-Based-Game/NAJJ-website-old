@@ -25,7 +25,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <Image
+            {/* <Image
               src={"/images/googleplay.png"}
               alt="SPEEED Logo"
               width={200}
@@ -36,7 +36,7 @@ export default function Home() {
               alt="SPEEED Logo"
               width={200}
               height={200}
-            />
+            /> */}
           </section>
           <Tutorial />
           <section
